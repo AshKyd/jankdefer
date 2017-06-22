@@ -20,7 +20,7 @@ module.exports = function (callback, options) {
   const fpsTarget = 1000 / framerateTarget;
 
   function log() {
-    if (debug) console.log.apply(arguments);
+    if (debug) console.log.apply(console, arguments);
   }
 
   function checkLoad() {
