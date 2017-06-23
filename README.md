@@ -23,10 +23,10 @@ Usage with options:
 const jankdefer = require('jankdefer');
 
 jankdefer(myFunction, {
-framerateTarget: 50,
-timeout: 3000,
-threshold: 5,
-debug: false,
+  framerateTarget: 50,
+  timeout: 3000,
+  threshold: 5,
+  debug: false,
 });
 ```
 
