@@ -1,7 +1,7 @@
 jankdefer 🖳🔥
 =============
 
-An experimental thing to defer loading until the page framerate stabilizes. The
+It's like [domready](https://www.npmjs.com/package/domready), except it defers loading until the page framerate stabilizes. The
 idea is that if requestAnimationFrame is running slowly, then the page has
 either not loaded yet or the page is in a background tab.
 
