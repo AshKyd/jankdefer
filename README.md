@@ -8,6 +8,8 @@ either not loaded yet or the page is in a background tab.
 This script ensures requestAnimationFrame runs at least 50fps for several frames
 before calling back.
 
+See also: [requestIdleCallback|https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback]
+
 Usage
 -----
 
