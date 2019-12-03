@@ -1,19 +1,41 @@
 {
   "name": "jankdefer",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Defer a function until framerate becomes stable",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "mocha test"
+    "build": "rollup --config",
+    "test": "mocha test",
+    "prepublishOnly": "npm run build"
   },
-  "author": "",
+  "author": {
+    "name": "Ash Kyd",
+    "email": "ash@kyd.com.au",
+    "url": "https://ash.ms/"
+  },
+  "contributors": [
+    {
+      "name": "Joshua Byrd",
+      "email": "phocks@gmail.com",
+      "url": "http://phocks.org/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AshKyd/jankdefer"
+  },
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
-    "mocha": "^3.4.2"
-  }
+    "mocha": "^6.2.2",
+    "rollup": "^1.27.8",
+    "rollup-plugin-babel": "^4.3.3"
+  },
+  "dependencies": {}
 }

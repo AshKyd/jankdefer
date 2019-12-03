@@ -3,13 +3,16 @@ const defaults = {
   framerateTarget: 50,
   timeout: 3000,
   threshold: 5,
-  debug: false,
+  debug: false
 };
 
 let keys = 0;
 
-module.exports = function (callback, options) {
-  const { framerateTarget, timeout, threshold, debug } = Object.assign(defaults, options);
+export default function(callback, options) {
+  const { framerateTarget, timeout, threshold, debug } = Object.assign(
+    defaults,
+    options
+  );
 
   let lastCheck;
   let checkCount = 0;
@@ -59,4 +62,4 @@ module.exports = function (callback, options) {
 
   // kick off the check
   checkLoad();
-};
+}
