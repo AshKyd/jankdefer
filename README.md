@@ -1,4 +1,4 @@
-jankdefer 💻🔥
+jankdefer 🖥🔥
 =============
 
 It's like [domready](https://www.npmjs.com/package/domready), except it defers loading until the page framerate stabilizes. The
